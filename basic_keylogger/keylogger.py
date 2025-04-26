@@ -2,6 +2,10 @@ import os
 import datetime
 from pynput import keyboard
 
+# Need to  update to be able to close program in terminal with CTRL + C
+# Update to include ? and other special chars that require [shift]
+# Brainstorm additional ways to improve overall functionality
+
 class Keylogger:
     def __init__(self, log_dir="keylog"):
         if not os.path.exists(log_dir):
